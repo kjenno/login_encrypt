@@ -9,7 +9,7 @@
             $LastName = $_POST['LastName'] ; 
             $username = $_POST['username'] ; 
             $Email = $_POST['Email'] ; 
-            $password=crypt($_POST['password'], PASSWORD_DEFAULT); 
+            $password=password_hash($_POST['password'], PASSWORD_DEFAULT); 
 
             $query = "INSERT INTO login(FirstName, LastName, username, Email, Password) VALUES (?, ?, ?, ?, ?)";
             $stmt = mysqli_prepare($conn, $query);

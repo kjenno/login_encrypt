@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-        <center>
+        <div id= "form"> 
             <form action="regback.php" method="post" enctype="multipart/form-data">
                 <input type="hidden"name="action" value="registration">
                 <table>
@@ -35,6 +36,6 @@
                     </tr>
                 </table>
             </form>
-        </center>  
+        </div>  
 </body>
 </html>
