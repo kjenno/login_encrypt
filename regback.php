@@ -1,6 +1,6 @@
 <?php
 
-    include("connection.php");
+    include("conn.php");
 
     if(isset($_POST['submit'])){
         if(!empty($_POST['FirstName']) && !empty($_POST['LastName'])&& !empty($_POST['username']) && !empty($_POST['Email']) && !empty($_POST['password'])){
@@ -17,7 +17,7 @@
             $run = mysqli_stmt_execute($stmt);
 
             if($run){
-                header("location: login.php");
+                header("location: index.php");
             }
             else{
                 echo "form not submitted"; 
