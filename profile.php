@@ -38,6 +38,14 @@ $stmt->close();
 						<td><?=$_SESSION['username']?></td>
 					</tr>
 					<tr>
+						<td>Firstname:</td>
+						<td><?=$_SESSION['FirstName']?></td>
+					</tr>
+					<tr>
+						<td>LastName:</td>
+						<td><?=$_SESSION['LastName']?></td>
+					</tr>
+					<tr>
 						<td>Password:</td>
 						<td><?=$_SESSION['password']?></td>
 					</tr>

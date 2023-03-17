@@ -18,6 +18,8 @@
         $count = mysqli_num_rows($result);
 
         if($count == 1){
+            $FirstName = $row['FirstName'];
+            $LastName = $row['LastName'];
             $Email = $row['Email'];
             $stored_password = $row['password'];
             if (password_verify($password, $stored_password)) {
@@ -27,6 +29,8 @@
                 $_SESSION['username'] = $username;
                 $_SESSION['password'] = $password;
                 $_SESSION['Email'] = $Email;
+                $_SESSION['FirstName']= $FirstName;
+                $_SESSION['LastName'] = $LastName;
                 header("location:home.php");
             } 
 
